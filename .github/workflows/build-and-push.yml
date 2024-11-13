@@ -23,7 +23,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ghcr.io/rakete-rso/custom-kong:latest -f docker/Dockerfile .
+          docker build -t ghcr.io/rakete-rso/custom-kong:latest -f Dockerfile .
 
       - name: Push Docker image
         run: |
