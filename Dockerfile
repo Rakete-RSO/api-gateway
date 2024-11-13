@@ -2,7 +2,7 @@
 FROM kong:latest
 
 # Copy base configuration
-COPY default.kong.yaml /opt/kong/default.kong.yaml
+COPY ./default.kong.yaml /opt/kong/default.kong.yaml
 
 # You can add default plugins, custom configurations, etc.
 ENV KONG_DATABASE="off" \
