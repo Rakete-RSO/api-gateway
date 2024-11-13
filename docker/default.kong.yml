@@ -1,0 +1,14 @@
+_format_version: "3.0"
+_transform: true
+
+# Default plugins that will be available to all services
+plugins:
+  - name: cors
+    config:
+      origins: ['*']
+      methods: ['GET', 'POST', 'PUT', 'DELETE']
+      headers: ['Content-Type', 'Authorization']
+  
+  - name: rate-limiting
+    config:
+      minute: 60
